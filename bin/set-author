@@ -1,16 +1,22 @@
 #!/usr/bin/env node
-var ReadJson = require("r-json")
-  , WriteJson = require("w-json")
-  ;
+
+const packy = require("../lib")
+    , log = require("emoji-logger")
+    , abs = require("abs")
+    ;
 
 const PATH = process.cwd() + "/package.json";
-const AUTHOR = "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)";
 
-var content = ReadJson(PATH);
-content.author = AUTHOR;
-content.license = "MIT";
+try {
+    var def = require(abs("~/.packy"));
+} catch (e) {
+    if (e.code === "MODULE_NOT_FOUND") {
+        return log("Cannot find ~/.packy.js or ~/.packy.json. Create one of these files to store the defaults.", "warn");
+    }
+    return log(e.message, "error");
+}
 
-WriteJson(
-    PATH
-  , content
-);
+packy(PATH, def, (err, data) => {
+    if (err) { return log(err.message, "error"); }
+    log("Done.");
+});

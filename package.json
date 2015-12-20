@@ -10,5 +10,11 @@
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "KINDLY",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "abs": "^1.2.0",
+    "emoji-logger": "^1.0.0",
+    "map-o": "^2.0.0",
+    "ul": "^5.2.0"
+  }
 }
