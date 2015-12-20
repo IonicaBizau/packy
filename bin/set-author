@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+var ReadJson = require("r-json")
+  , WriteJson = require("w-json")
+  ;
+
+const PATH = process.cwd() + "/package.json";
+const AUTHOR = "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)";
+
+var content = ReadJson(PATH);
+content.author = AUTHOR;
+content.license = "MIT";
+
+WriteJson(
+    PATH
+  , content
+);

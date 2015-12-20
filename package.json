@@ -1,0 +1,14 @@
+{
+  "name": "set-author",
+  "version": "1.0.0",
+  "bin": {
+    "set-author": "./bin/set-author"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "KINDLY",
+  "description": ""
+}
