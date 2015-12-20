@@ -10,11 +10,26 @@
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
-  "description": "",
+  "description": "Set default fields in your package.json files.",
   "dependencies": {
     "abs": "^1.2.0",
     "emoji-logger": "^1.0.0",
     "map-o": "^2.0.0",
     "ul": "^5.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/packy.git"
+  },
+  "keywords": [
+    "packy",
+    "package.json",
+    "npm",
+    "default"
+  ],
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/packy/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/packy#readme"
 }
