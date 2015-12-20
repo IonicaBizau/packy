@@ -13,6 +13,7 @@
   "description": "Set default fields in your package.json files.",
   "dependencies": {
     "abs": "^1.2.0",
+    "clp": "^3.2.0",
     "emoji-logger": "^1.0.0",
     "find-value": "^1.0.0",
     "map-o": "^2.0.0",

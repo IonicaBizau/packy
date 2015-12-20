@@ -3,9 +3,23 @@
 const packy = require("../lib")
     , log = require("emoji-logger")
     , abs = require("abs")
+    , Clp = require("clp")
+    , pack = require("../package")
     ;
 
 const PATH = process.cwd() + "/package.json";
+
+var parser = new Clp({
+    name: "Packy"
+  , version: pack.version
+  , exe: pack.name
+  , examples: [
+        "packy"
+    ]
+  , docs_url: pack.homepage
+  , notes: "Make sure the config file is available at ~/.packy.js or ~/pack.json."
+  , process: true
+});
 
 try {
     var def = require(abs("~/.packy"));
