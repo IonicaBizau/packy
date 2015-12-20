@@ -1,8 +1,8 @@
 {
-  "name": "set-author",
+  "name": "packy",
   "version": "1.0.0",
   "bin": {
-    "set-author": "./bin/set-author"
+    "packy": "./bin/packy"
   },
   "main": "index.js",
   "scripts": {
