@@ -84,6 +84,12 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 ## Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
+ - I developed `packy` to save me some time when having to create
+    the `package.json` files. Usually, now, I do `npm init`, without
+    filling the `author` and `license` fields (because they are repetitive
+    things) and then `packy`. It automagically fills the additional
+    fields from my config file (`~/.packy.json`). :sparkling_heart:
+
 ## License
 
 [MIT][license] © [Ionică Bizău][website]

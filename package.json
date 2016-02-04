@@ -107,6 +107,17 @@
           ]
         }
       }
-    ]
+    ],
+    "usages": {
+        "ul": [
+            [
+                "I developed `packy` to save me some time when having to create",
+                "the `package.json` files. Usually, now, I do `npm init`, without",
+                "filling the `author` and `license` fields (because they are repetitive",
+                "things) and then `packy`. It automagically fills the additional",
+                "fields from my config file (`~/.packy.json`). :sparkling_heart:"
+            ]
+            ]
+    }
   }
 }
