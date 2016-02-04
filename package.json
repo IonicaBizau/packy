@@ -38,6 +38,16 @@
   "homepage": "https://github.com/IonicaBizau/packy#readme",
   "blah": {
     "h_img": "http://i.imgur.com/fDrtuz7.png",
+    "description": {
+      "p": [
+        [
+          "This is useful to me especially to autofill my `author` and",
+          "`license` fields, so I don't have to type my long name, email",
+          "address and website each time when I start a new `npm` package.",
+          "Yes, it bumps your productivity! :rocket:"
+        ]
+      ]
+    },
     "installation": [
       {
         "h3": "Configuring `~/.packy.js` or `~/.packy.json`"

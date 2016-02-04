@@ -4,6 +4,11 @@
 
 > Set default fields in your package.json files.
 
+This is useful to me especially to autofill my `author` and
+`license` fields, so I don't have to type my long name, email
+address and website each time when I start a new `npm` package.
+Yes, it bumps your productivity! :rocket:
+
 ## Installation
 
 You can install the package globally and use it as command line tool:
