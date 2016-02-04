@@ -34,12 +34,12 @@ Documentation can be found at https://github.com/IonicaBizau/packy#readme
 
 To make `packy` usable on your machine, you have to create a
 file named `packy.js` or `packy.json` in your home directory
-(`$HOME` sweet `~` :joy:). If you always to override your
-`package.json` fields with static data, `json` is easier for
-you. If you need some dynamic part (e.g. if the `license` field
-from `package.json` contains `GPL`, then return `GPL-3`
-otherwise return `"MIT"` (see example below).
-It should work for subfields (deep merge) too.
+(`$HOME` sweet `~` :joy:). :house_with_garden: If you always to override your
+`package.json` fields with static data, the `json`format is easier for
+you. If you need some dynamic fields (e.g. if the `license` field
+from `package.json` contains `GPL`, then return `"GPL-3"`
+otherwise return `"MIT"` (see the example below).
+It should work for subfields (deep merge) too. :four_leaf_clover:
 
 #### JSON Format (`~/.packy.json`)
 
@@ -59,6 +59,8 @@ My `~/.packy.js` *looks* like this:
 module.exports = {
     author: "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)"
   , license: function (license) {
+       // Few of my projects are licensed under GPL,
+       // so don't override the license field
         if (/gpl/i.test(license)) {
             return license;
         }
