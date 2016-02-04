@@ -1,6 +1,8 @@
-# `$ packy` [![Support this project][donate-now]][paypal-donations]
+[![packy](http://i.imgur.com/fDrtuz7.png)](#)
 
-Set default fields in your package.json files.
+# `$ packy` [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/packy.svg)](https://www.npmjs.com/package/packy) [![Downloads](https://img.shields.io/npm/dt/packy.svg)](https://www.npmjs.com/package/packy) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+
+> Set default fields in your package.json files.
 
 ## Installation
 
@@ -17,7 +19,7 @@ $ packy --help
 Usage: packy [options]
 
 Options:
-  -h, --help     Displays this help.
+  -h, --help     Displays this help.          
   -v, --version  Displays version information.
 
 Examples:
@@ -28,6 +30,43 @@ Make sure the config file is available at ~/.packy.js or ~/pack.json.
 Documentation can be found at https://github.com/IonicaBizau/packy#readme
 ```
 
+### Configuring `~/.packy.js` or `~/.packy.json`
+
+To make `packy` usable on your machine, you have to create a
+file named `packy.js` or `packy.json` in your home directory
+(`$HOME` sweet `~` :joy:). If you always to override your
+`package.json` fields with static data, `json` is easier for
+you. If you need some dynamic part (e.g. if the `license` field
+from `package.json` contains `GPL`, then return `GPL-3`
+otherwise return `"MIT"` (see example below).
+It should work for subfields (deep merge) too.
+
+#### JSON Format (`~/.packy.json`)
+
+My `~/.packy.json` could look like this:
+
+```json
+{
+    "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)"
+  , "license": "MIT"
+}
+```
+#### JS Format (`~/.packy.js`)
+
+My `~/.packy.js` *looks* like this:
+
+```js
+module.exports = {
+    author: "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)"
+  , license: function (license) {
+        if (/gpl/i.test(license)) {
+            return license;
+        }
+        return "MIT";
+    }
+};
+```
+
 ## Documentation
 
 For full API reference, see the [DOCUMENTATION.md][docs] file.
@@ -36,7 +75,6 @@ For full API reference, see the [DOCUMENTATION.md][docs] file.
 Have an idea? Found a bug? See [how to contribute][contributing].
 
 ## Where is this library used?
-
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
 ## License
