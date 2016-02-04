@@ -35,5 +35,66 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/packy/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/packy#readme"
+  "homepage": "https://github.com/IonicaBizau/packy#readme",
+  "blah": {
+    "h_img": "http://i.imgur.com/fDrtuz7.png",
+    "installation": [
+      {
+        "h3": "Configuring `~/.packy.js` or `~/.packy.json`"
+      },
+      {
+        "p": [
+          [
+            "To make `packy` usable on your machine, you have to create a",
+            "file named `packy.js` or `packy.json` in your home directory",
+            "(`$HOME` sweet `~` :joy:). If you always to override your",
+            "`package.json` fields with static data, `json` is easier for",
+            "you. If you need some dynamic part (e.g. if the `license` field",
+            "from `package.json` contains `GPL`, then return `GPL-3`",
+            "otherwise return `\"MIT\"` (see example below).",
+            "It should work for subfields (deep merge) too."
+          ]
+        ]
+      },
+      {
+        "h4": "JSON Format (`~/.packy.json`)"
+      },
+      {
+        "p": "My `~/.packy.json` could look like this:"
+      },
+      {
+        "code": {
+          "language": "json",
+          "content": [
+            "{",
+            "    \"author\": \"Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)\"",
+            "  , \"license\": \"MIT\"",
+            "}"
+          ]
+        }
+      },
+      {
+        "h4": "JS Format (`~/.packy.js`)"
+      },
+      {
+        "p": "My `~/.packy.js` *looks* like this:"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "module.exports = {",
+            "    author: \"Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)\"",
+            "  , license: function (license) {",
+            "        if (/gpl/i.test(license)) {",
+            "            return license;",
+            "        }",
+            "        return \"MIT\";",
+            "    }",
+            "};"
+          ]
+        }
+      }
+    ]
+  }
 }
