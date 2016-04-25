@@ -29,16 +29,18 @@ Then, run `packy --help` and see what the CLI tool can do.
 $ packy --help
 Usage: packy [options]
 
+Set default fields in your package.json files.
+
 Options:
-  -h, --help     Displays this help.
   -v, --version  Displays version information.
+  -h, --help     Displays this help.
 
 Examples:
-  packy
+  $ packy
 
 Make sure the config file is available at ~/.packy.js or ~/pack.json.
 
-Documentation can be found at https://github.com/IonicaBizau/packy#readme
+Documentation can be found at https://github.com/IonicaBizau/packy#readme.
 ```
 
 ### Configuring `~/.packy.js` or `~/.packy.json`
@@ -97,6 +99,7 @@ If you are using this library in one of your projects, add it in this list. :spa
     filling the `author` and `license` fields (because they are repetitive
     things) and then `packy`. It automagically fills the additional
     fields from my config file (`~/.packy.json`). :sparkling_heart:
+
 
 ## :scroll: License
 
