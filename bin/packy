@@ -4,16 +4,18 @@ const packy = require("../lib")
     , log = require("emoji-logger")
     , abs = require("abs")
     , pp = require("package-json-path")
+    , Tilda = require("tilda")
     ;
 
-const PATH = pp("/package.json");
+const PATH = pp();
 
-new Tilda(`${__dirname}/../package.json`, [
+new Tilda(`${__dirname}/../package.json`, {
     examples: [
         "packy"
     ]
   , notes: "Make sure the config file is available at ~/.packy.js or ~/pack.json."
-]).main(a => {
+}).main(a => {
+
     try {
         var def = require(abs("~/.packy"));
     } catch (e) {
