@@ -3,34 +3,28 @@
 const packy = require("../lib")
     , log = require("emoji-logger")
     , abs = require("abs")
-    , Clp = require("clp")
-    , pack = require("../package")
+    , pp = require("package-json-path")
     ;
 
-const PATH = process.cwd() + "/package.json";
+const PATH = pp("/package.json");
 
-var parser = new Clp({
-    name: "Packy"
-  , version: pack.version
-  , exe: pack.name
-  , examples: [
+new Tilda(`${__dirname}/../package.json`, [
+    examples: [
         "packy"
     ]
-  , docs_url: pack.homepage
   , notes: "Make sure the config file is available at ~/.packy.js or ~/pack.json."
-  , process: true
-});
-
-try {
-    var def = require(abs("~/.packy"));
-} catch (e) {
-    if (e.code === "MODULE_NOT_FOUND") {
-        return log("Cannot find ~/.packy.js or ~/.packy.json. Create one of these files to store the defaults.", "warn");
+]).main(a => {
+    try {
+        var def = require(abs("~/.packy"));
+    } catch (e) {
+        if (e.code === "MODULE_NOT_FOUND") {
+            return log("Cannot find ~/.packy.js or ~/.packy.json. Create one of these files to store the defaults.", "warn");
+        }
+        return log(e.message, "error");
     }
-    return log(e.message, "error");
-}
 
-packy(PATH, def, (err, data) => {
-    if (err) { return log(err.message, "error"); }
-    log("Done.");
+    packy(PATH, def, (err, data) => {
+        if (err) { return log(err.message, "error"); }
+        log("Done.");
+    });
 });
