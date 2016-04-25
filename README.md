@@ -1,30 +1,36 @@
+
 [![packy](http://i.imgur.com/fDrtuz7.png)](#)
 
 # `$ packy` [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/packy.svg)](https://www.npmjs.com/package/packy) [![Downloads](https://img.shields.io/npm/dt/packy.svg)](https://www.npmjs.com/package/packy) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Set default fields in your package.json files.
 
+
 This is useful to me especially to autofill my `author` and
 `license` fields, so I don't have to type my long name, email
 address and website each time when I start a new `npm` package.
 Yes, it bumps your productivity! :rocket:
 
-## Installation
+
+## :cloud: Installation
 
 You can install the package globally and use it as command line tool:
+
 
 ```sh
 $ npm i -g packy
 ```
 
+
 Then, run `packy --help` and see what the CLI tool can do.
 
-```sh
+
+```
 $ packy --help
 Usage: packy [options]
 
 Options:
-  -h, --help     Displays this help.          
+  -h, --help     Displays this help.
   -v, --version  Displays version information.
 
 Examples:
@@ -74,23 +80,25 @@ module.exports = {
 };
 ```
 
-## Documentation
+## :memo: Documentation
 
 For full API reference, see the [DOCUMENTATION.md][docs] file.
 
-## How to contribute
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
+
+ - [`np-init`](https://github.com/IonicaBizau/np-init#readme)—Easily start a npm package from scratch.
  - I developed `packy` to save me some time when having to create
     the `package.json` files. Usually, now, I do `npm init`, without
     filling the `author` and `license` fields (because they are repetitive
     things) and then `packy`. It automagically fills the additional
     fields from my config file (`~/.packy.json`). :sparkling_heart:
 
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
