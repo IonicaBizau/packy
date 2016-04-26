@@ -1,6 +1,6 @@
 {
   "name": "packy",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "bin": {
     "packy": "./bin/packy"
   },
@@ -119,5 +119,16 @@
         ]
       ]
     }
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
