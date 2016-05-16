@@ -16,6 +16,7 @@
     "emoji-logger": "^1.0.0",
     "find-value": "^1.0.0",
     "map-o": "^2.0.0",
+    "package-json-path": "^1.0.1",
     "r-json": "^1.2.0",
     "tilda": "^4.2.1",
     "ul": "^5.2.0",
