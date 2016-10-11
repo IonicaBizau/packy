@@ -3,7 +3,7 @@
 
 # `$ packy`
 
- [![Patreon](https://img.shields.io/badge/Support%20me%20on-Patreon-%23e6461a.svg)][paypal-donations] [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/packy.svg)](https://www.npmjs.com/package/packy) [![Downloads](https://img.shields.io/npm/dt/packy.svg)](https://www.npmjs.com/package/packy) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+ [![Patreon](https://img.shields.io/badge/Support%20me%20on-Patreon-%23e6461a.svg)][patreon] [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/packy.svg)](https://www.npmjs.com/package/packy) [![Downloads](https://img.shields.io/npm/dt/packy.svg)](https://www.npmjs.com/package/packy) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Set default fields in your package.json files.
 
@@ -91,6 +91,7 @@ For full API reference, see the [DOCUMENTATION.md][docs] file.
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
+
 ## :moneybag: Donations
 
 Another way to support the development of my open-source modules is
@@ -104,7 +105,7 @@ Thanks! :heart:
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
 
- - [`np-init`](https://github.com/IonicaBizau/np-init#readme)—Easily start a npm package from scratch.
+
  - I developed `packy` to save me some time when having to create
     the `package.json` files. Usually, now, I do `npm init`, without
     filling the `author` and `license` fields (because they are repetitive
