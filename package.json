@@ -1,6 +1,6 @@
 {
   "name": "packy",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "bin": {
     "packy": "./bin/packy"
   },
@@ -125,6 +125,7 @@
     "bin/",
     "app/",
     "lib/",
+    "build/",
     "dist/",
     "src/",
     "resources/",
