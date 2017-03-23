@@ -9,11 +9,8 @@
 
 
 This is useful to me especially to autofill my `author` and
-
 `license` fields, so I don't have to type my long name, email
-
 address and website each time when I start a new `npm` package.
-
 Yes, it bumps your productivity! :rocket:
 
 
@@ -51,19 +48,12 @@ Documentation can be found at https://github.com/IonicaBizau/packy#readme.
 ### Configuring `~/.packy.js` or `~/.packy.json`
 
 To make `packy` usable on your machine, you have to create a
-
 file named `packy.js` or `packy.json` in your home directory
-
 (`$HOME` sweet `~` :joy:). :house_with_garden: If you always to override your
-
 `package.json` fields with static data, the `json`format is easier for
-
 you. If you need some dynamic fields (e.g. if the `license` field
-
 from `package.json` contains `GPL`, then return `"GPL-3"`
-
 otherwise return `"MIT"` (see the example below).
-
 It should work for subfields (deep merge) too. :four_leaf_clover:
 
 #### JSON Format (`~/.packy.json`)
@@ -129,6 +119,7 @@ If you are using this library in one of your projects, add it in this list. :spa
     filling the `author` and `license` fields (because they are repetitive
     things) and then `packy`. It automagically fills the additional
     fields from my config file (`~/.packy.json`). :sparkling_heart:
+
 
 ## :scroll: License
 
