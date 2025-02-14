@@ -1,6 +1,6 @@
 {
   "name": "packy",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "bin": {
     "packy": "./bin/packy"
   },
@@ -132,6 +132,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
